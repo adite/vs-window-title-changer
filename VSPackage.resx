@@ -119,6 +119,7 @@
   </resheader>
   <data name="1" xml:space="preserve">
     <value>ZDCPIPHZZJK8I9KMH0MKJ2PERMJ1KADHQHRDHDI2DEDRJ2ARDQDARPJKKPDMRHZEK0D9K2R0CDP2DHAAZJA8KTECA0IRQCQMARQAZIKCHQAIRMH0Q8RKK2DDJ3M8PCRZ</value>
+    <comment>PLK for VS2010_AND_LATER</comment>
   </data>
   <data name="110" xml:space="preserve">
     <value>Visual Studio Window Title Changer</value>
@@ -134,6 +135,10 @@ http://visualstudiogallery.msdn.microsoft.com/2e8ebfe4-023f-4c4d-9b7a-d05bbc5cb2
 The project is opensource released under the terms of The MIT License:
 https://github.com/pasztorpisti/vs-window-title-changer
 </value>
+  </data>
+  <data name="2" xml:space="preserve">
+    <value>C8QERECRQHM8Q9KTPMJHCZPPEMM0EQZ9IQH1DDQ1ZAIAKCK1E1ERKAI2AEQADCIZP8HJJ8Q2DHC1ZPDAREZKP8I2EZI9KAZDJCETI2M1JRK8CJHDRAIPJPMIPKMQKIJ8</value>
+    <comment>PLK pre VS2010</comment>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="400" type="System.Resources.ResXFileRef, System.Windows.Forms">

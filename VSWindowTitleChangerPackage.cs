@@ -32,11 +32,19 @@ namespace VSWindowTitleChanger
 	// In order be loaded inside Visual Studio in a machine that has not the VS SDK installed, 
 	// package needs to have a valid load key (it can be requested at 
 	// http://msdn.microsoft.com/vstudio/extend/). This attributes tells the shell that this 
-	// package has a load key embedded in its resources.
-	[ProvideLoadKey("Standard", "2.0", "Visual Studio Window Title Changer", "WoofWoof", 1)]
-	// This attribute is used to register the informations needed to show the this package
-	// in the Help/About dialog of Visual Studio.
+    // package has a load key embedded in its resources.
+#if VS2010_AND_LATER
+    [ProvideLoadKey("Standard", "2.0", "Visual Studio Window Title Changer", "WoofWoof", 1)]    
+#else
+    [ProvideLoadKey("Standard", "1.1", "Visual Studio Window Title Changer", "WoofWoof", 2)]
+#endif
+    // This attribute is used to register the informations needed to show the this package
+	// in the Help/About dialog of Visual Studio.   
+#if VS2010_AND_LATER
 	[InstalledProductRegistration(false, "#110", "#112", "2.1.9", IconResourceID = 400)]
+#else
+    [InstalledProductRegistration(false, "#110", "#112", "1.1", IconResourceID = 400)]
+#endif
 	[Guid(GuidList.guidVSWindowTitleChangerPkgString)]
 	[ProvideOptionPage(typeof(ToolOptions), "VS Window Title Changer", "Settings", 0, 0, true)]
 	[ProvideAutoLoad(Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.DesignMode)]
